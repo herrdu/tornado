@@ -1,0 +1,124 @@
+<div class="page-sidebar-wrapper">
+    <!-- BEGIN SIDEBAR -->
+    <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+    <!-- DOC: Change data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+    <div class="page-sidebar navbar-collapse collapse">
+        <!-- BEGIN SIDEBAR MENU -->
+        <!-- DOC: Apply "page-sidebar-menu-light" class right after "page-sidebar-menu" to enable light sidebar menu style(without borders) -->
+        <!-- DOC: Apply "page-sidebar-menu-hover-submenu" class right after "page-sidebar-menu" to enable hoverable(hover vs accordion) sub menu mode -->
+        <!-- DOC: Apply "page-sidebar-menu-closed" class right after "page-sidebar-menu" to collapse("page-sidebar-closed" class must be applied to the body element) the sidebar sub menu mode -->
+        <!-- DOC: Set data-auto-scroll="false" to disable the sidebar from auto scrolling/focusing -->
+        <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
+        <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
+        <ul class="page-sidebar-menu   " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+            <li class="nav-item start <#if current=" index ">active</#if>">
+                <a href="#" class="nav-link nav-toggle">
+                    <i class="icon-home"></i>
+                    <span class="title">首页</span>
+                </a>
+            </li>
+            <li class="nav-item <#if current=" comManage ">active</#if>">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="icon-globe"></i>
+                    <span class="title">公司管理</span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="nav-item <#if current=" indUser ">active</#if>">
+                        <a href="${context}/company/showindex.do" class="nav-link ">
+                            <span class="title">公司列表</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item <#if current=" indUser "||current="comUser "||current="sysUser ">active open</#if>">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="icon-user"></i>
+                    <span class="title">用户管理</span>
+                    <span class="arrow <#if current=" indUser "||current="comUser "||current="sysUser ">open</#if>"></span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="nav-item <#if current=" indUser ">active</#if>">
+                        <a href="${context}/userManager/individualUser.do" class="nav-link ">
+                            <span class="title">个人用户</span>
+                        </a>
+                    </li>
+                    <li class="nav-item <#if current=" comUser ">active</#if>">
+                        <a href="${context}/companyUser/companyUser.do" class="nav-link ">
+                            <span class="title">公司用户</span>
+                        </a>
+                    </li>
+                    <li class="nav-item <#if current=" sysUser ">active</#if>">
+                        <a href="${context}/systemUser/systemUser.do" class="nav-link ">
+                            <span class="title">系统用户</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item <#if current=" roleManage ">active open</#if>">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="icon-credit-card"></i>
+                    <span class="title">角色管理</span>
+                    <span class="arrow <#if current=" roleManage "> open</#if>"></span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="nav-item <#if current=" roleManage ">active</#if>">
+                        <a href="${context}/systemUser/systemUser.do" class="nav-link ">
+                            <span class="title">角色管理</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item <#if current=" accChecking "||current="salaryHistory ">active open</#if>">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="icon-credit-card"></i>
+                    <span class="title">工资代发</span>
+                    <span class="arrow <#if current=" accChecking "||current="salaryHistory "> open</#if>"></span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="nav-item <#if current=" accChecking ">active</#if>">
+                        <a href="salary-pay.html" class="nav-link ">
+                            <span class="title">收款对账</span>
+                        </a>
+                    </li>
+                    <li class="nav-item <#if current=" accChecking ">active</#if>">
+                        <a href="ui_general.html" class="nav-link ">
+                            <span class="title">发放历史</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item <#if current=" payAudit "||current="payHistory "||current="manualWithdrawl ">active open</#if>">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="icon-layers"></i>
+                    <span class="title">账务管理</span>
+                    <span class="arrow <#if current=" payAudit "||current="payHistory "||current="manualWithdrawl ">open</#if>"></span>
+                </a>
+                <ul class="sub-menu">
+                    <li class="nav-item <#if current=" payAudit ">active</#if>">
+                        <a href="salary-pay.html" class="nav-link ">
+                            <span class="title">资金审核</span>
+                        </a>
+                    </li>
+                    <li class="nav-item <#if current=" payHistory ">active</#if>" ">
+                            <a href="ui_general.html " class="nav-link ">
+                                <span class="title ">资金记录</span>
+                            </a>
+                        </li>
+                        <li class="nav-item <#if current="manualWithdrawl">active</#if>"">
+                        <a href="ui_general.html" class="nav-link ">
+                            <span class="title">手工提现</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item <#if current=" notification ">active</#if>">
+                <a href="javascript:;" class="nav-link nav-toggle">
+                    <i class="icon-notebook"></i>
+                    <span class="title">日志管理</span>
+                </a>
+            </li>
+        </ul>
+        <!-- END SIDEBAR MENU -->
+    </div>
+    <!-- END SIDEBAR -->
+</div>

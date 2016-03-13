@@ -1,0 +1,5 @@
+{{extend ("./layout.xtpl")}}
+
+{{#block ("content")}}
+    <p>这是正文</p>
+{{/block}}
