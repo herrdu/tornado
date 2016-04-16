@@ -1,0 +1,98 @@
+/*基于 bootstrap 的左圆角右直角input 的样式*/
+
+/*查找的样式*/
+
+.searchForm .search-item {
+    float: left;
+    margin: 5px 0;
+    padding: 0 5px 0 0;
+    height: 34px;
+}
+
+.searchForm .search-item .btn {
+    width: 80px;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.searchForm .search-item .input-group-addon {
+    width: 80px;
+}
+
+.searchForm .search-item .input-group-addon,
+.edit-form .input-group-addon {
+    background-color: #fff;
+}
+
+.date-picker .form-control:first-child {
+    border-radius: 0;
+}
+
+.date-picker .input-group-btn {
+    vertical-align: top;
+}
+
+
+/*向右浮动按钮样式*/
+
+.searchForm .search-item .rbtn {
+    float: right;
+}
+
+
+/*居中查询按钮的样式*/
+
+.searchForm .search-item.midbtn,
+.midbtn {
+    text-align: center;
+}
+
+.searchForm .search-item.midbtn .btn {
+    float: none;
+    margin: 0 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .searchForm .search-item{
+        width: 100%;
+    }    
+    .searchForm .blank-item{
+        display: none;
+    }
+}
+
+/*查找的样式End*/
+
+
+/*创建公司样式Start*/
+
+.createform {
+    overflow: hidden;
+}
+
+.createform .input-group {
+    width: 100%;
+}
+
+.createform .input-group-addon {
+    float: left;
+    height: 34px;
+    line-height: 20px;
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.createform .input-group-content {
+    float: left;
+    width: 100%;
+    padding-left: 110px;
+}
+
+.createform .input-group-content .form-control {
+    border-radius: 0 4px 4px 0;
+}
+
+
+/*创建公司样式End*/

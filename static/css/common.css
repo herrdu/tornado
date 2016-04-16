@@ -1,0 +1,152 @@
+/*
+
+Common Css:全局通用样式;
+Version: 1.0
+By: HerrDu
+QQ：452661976
+License: MIT License
+
+*/
+
+.page-content-wrapper .page-content {
+    padding-top: 0 !important;
+}
+
+
+
+
+/*列表样式*/
+
+.dataTables_info {
+    line-height: 58px;
+}
+
+.table .btn {
+    font-size: 10px;
+    padding: 6px 10px 5px 10px;
+}
+
+
+/*通用样式*/
+
+.w100p {
+    width: 100%;
+}
+
+.fl {
+    float: left;
+}
+
+.mt-20 {
+    margin-top: 40px;
+}
+
+.mt10 {
+    margin-top: 10px;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.ml0 {
+    margin-left: 0;
+}
+
+.ml5 {
+    margin-left: 5px;
+}
+
+.ml10 {
+    margin-left: 10px;
+}
+
+.pl0 {
+    padding-left: 0;
+}
+
+.pr0 {
+    padding-right: 0;
+}
+
+.mr10 {
+    margin-right: 10px;
+}
+
+.mlr0 {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.plr0 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.h32 {
+    height: 32px;
+}
+
+.h34 {
+    height: 34px;
+}
+
+
+/*文本样式*/
+
+.txtr {
+    text-align: right;
+}
+
+.input-group-addon {
+    min-width: 110px;
+    text-align: justify;
+    text-align-last: justify;
+}
+.vtop{
+    vertical-align: top;
+}
+
+/*字头样式*/
+
+.fc666 {
+    color: #666;
+}
+
+
+/*边框样式*/
+
+.brRa4 {
+    border-radius: 4px;
+}
+
+
+/*扩展样式*/
+
+.op70p {
+    /* for IE */
+    filter: alpha(opacity=70);
+    /* CSS3 standard */
+    opacity: .7;
+}
+
+
+/*Input的样式*/
+
+.form-input {
+    height: 34px;
+    line-height: 20px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    border-radius: 4px;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #c2cad8;
+}
+
+
+
+.row-form {
+    margin: 0 80px;
+}
