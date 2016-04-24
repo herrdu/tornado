@@ -1,0 +1,40 @@
+/**
+ * Author:DuYutao
+ * 用户帮助Css
+ */
+
+.portlet-body {
+    margin: 0 50px;
+    color: #999;
+    font-family:  "arial","Hiragino Sans GB","Microsoft Yahei" ;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.portlet-body h5 {
+    font-size: 16px;
+    color: #666;
+    border-left: 3px solid #3598dc;
+    padding-left: 5px;
+}
+
+.portlet-body p {
+    font-size: 14px;
+    margin-bottom: 5px;
+    width: 90%;
+}
+
+.portlet-body h3 {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.portlet-body .fa-phone {
+    margin: 0 0 0 20px;
+}
+
+.portlet-body h4 {
+	color: #999;
+}

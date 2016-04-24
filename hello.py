@@ -3,7 +3,7 @@ import tornado.web
 
 class MainHandler(tornado.web.RequestHandler):
     def get(self):
-         self.render("views/mainAdmin.html",misc_site="http://localhost:8083/static")
+         self.render("views/content.html",misc_site="http://localhost:8083/static")
 
     def post(self):
         self.set_header("Content-Type", "text/plain")
@@ -15,5 +15,5 @@ application = tornado.web.Application([
 ])
 
 if __name__ == "__main__":
-    application.listen(9000)
+    application.listen(9001)
     tornado.ioloop.IOLoop.instance().start()

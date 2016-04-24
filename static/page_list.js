@@ -31,4 +31,12 @@ module.exports = {
         'common/company.conf.js',
         // 'widget/bootbox/bootbox.js',
     ],
+    <!-- BEGIN THEME GLOBAL STYLES -->
+    'componentCss.css': [
+        'components-md.css',
+        'plugins-md.css',
+        'layout.css',
+        'light.css',
+    ],
+    <!-- BEGIN PAGE LEVEL STYLES -->
 };

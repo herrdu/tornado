@@ -1,0 +1,151 @@
+/*顶部banner*/
+
+.accBanner {
+    width: 100%;
+}
+
+
+/*左title 右 value 的form 样式*/
+
+.basic-form {
+    margin-top: 40px;
+}
+
+.form-view {
+    color: #7a7a7a;
+}
+
+.form-view .control-label:first-child {
+    text-align: right;
+}
+
+.form-view .control-label:last-child {
+    text-align: left;
+    padding-left: 0;
+}
+
+.form-group.form-view {
+    overflow: hidden;
+}
+
+.money-form .form-group {
+    margin-left: 60px;
+}
+
+
+/*提现样式Start*/
+
+
+.cashout-form {
+    min-height: 240px;
+}
+
+.cashout-form .btn {
+    margin-left: 25%;
+}
+
+.form-view span label{
+    /*vertical-align: top;*/
+}
+
+.bank_logo {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-size: cover;
+}
+
+.ABC {
+    background: url(images/banklogo/ABC.png) no-repeat;
+    background-size: cover;
+}
+
+.BCCB {
+    background: url(images/banklogo/BCCB.png) no-repeat;
+    background-size: cover;
+}
+
+.BOC {
+    background: url(images/banklogo/BOC.png) no-repeat;
+    background-size: cover;
+}
+
+.BOCO {
+    background: url(images/banklogo/BOCO.png) no-repeat;
+    background-size: cover;
+}
+
+.CCB {
+    background: url(./images/banklogo/CCB.png) no-repeat;
+    background-size: cover;
+}
+
+.CEB {
+    background: url(images/banklogo/CEB.png) no-repeat;
+    background-size: cover;
+}
+
+.CMBC {
+    background: url(images/banklogo/CMBC.png) no-repeat;
+    background-size: cover;
+}
+
+.CMBCHINA {
+    background: url(images/banklogo/CMBCHINA.png) no-repeat;
+    background-size: cover;
+}
+
+.ECITIC {
+    background: url(images/banklogo/ECITIC.png) no-repeat;
+    background-size: cover;
+}
+
+.ICBC {
+    background: url(images/banklogo/ICBC.png) no-repeat;
+    background-size: cover;
+}
+
+.SPDB {
+    background: url(images/banklogo/SPDB.png) no-repeat;
+    background-size: cover;
+}
+
+.cashout-form .help-block {
+    font-size: 10px;
+    background-size: cover;
+}
+
+
+/*提现样式End*/
+
+
+/*交易记录样式 Start */
+
+.input-group .first-input,
+.input-group .last-input {
+    width: 42%;
+}
+
+.input-group .link-symbol {
+    float: left;
+    padding: 5px 5px;
+}
+
+
+/*交易记录样式 End*/
+
+
+/*主从关系样式 Start */
+
+.hypotaxis-search-form {
+    padding-left: 0;
+}
+
+.hypotaxis-search-form .form-control {
+    width: 40%;
+    margin-right: 15px;
+    float: left;
+}
+
+
+/*交易记录样式 End*/

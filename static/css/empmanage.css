@@ -1,0 +1,25 @@
+/*员工管理界面*/
+
+.ul-info li {
+    float: left;
+    list-style: none;
+    width: 150px;
+}
+.searchForm .form-input{
+	width: 100%;
+}
+
+
+/*信息代改界面样式Start*/
+
+.search-item.col-md-12 .form-control {
+    width: 33%;
+}
+
+.search-item.col-md-12 .btn {
+    float: none;
+}
+
+.edit-form {
+    overflow: hidden;
+}

@@ -33,10 +33,10 @@ var com_Conf = function() {
             return { 1: '身份证', 2: '军官证/警官证', 3: '户口本', 4: '护照', 5: '临时证件' };
         },
         getEmpStatus: function() { //员工状态
-            return { 1: '新增', 2: '启用', 3: '禁用' };
+            return { 0: '新增', 1: '启用', 2: '禁用' };
         },
         getEmpAuditStatus: function() { //员工审核状态
-            return { 1: '未审核', 2: '通过', 3: '不通过' };
+            return {0:'申请', 1: '通过', 2: '未通过', 3: '完成' };
         },
         getEmpValidateStatus: function() { //员工验证状态
             return { 1: '通过', 2: '异常' };
@@ -64,7 +64,7 @@ var com_Conf = function() {
         },
         getBusiType: function() { //业务类型
             // CONSUME,SALARY,TRANSFER,FUND,REFUND,WITHDRAW,DEPOSIT,FROZEN,INNERTRANSFER,DUEPAYOFF
-            return {"CONSUME":"不知道","SALARY":"工资","TRANSFER":"转账","FUND":"基金","REFUND":"不知道","WITHDRAW":"提现","DEPOSIT":"不知道","FROZEN":"冻结","INNERTRANSFER":"内部转账","DUEPAYOFF":"不知道"}
+            return {"CONSUME":"消费","SALARY":"工资","TRANSFER":"转账","FUND":"基金","REFUND":"退款","WITHDRAW":"提现","DEPOSIT":"入金",RECHARGE:"充值","FROZEN":"冻结","INNERTRANSFER":"同账号内转账","DUEPAYOFF":"工资代发划款",CURRENTWITHDRAW:"出金"}
             // return { 1: '充值', 2: '提现', 3: '消费' }
         },
         getTradeStatus: function() { //交易状态
