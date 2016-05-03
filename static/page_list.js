@@ -26,6 +26,7 @@ module.exports = {
         'common/jquery-extend.js',
         'common/interface.js',
         'common/util.js',
+        'common/jquery-extend.js',
         // 'widget/bootbox/bootbox.js',
     ],
     <!-- BEGIN THEME GLOBAL STYLES -->
@@ -66,6 +67,7 @@ module.exports = {
         'widget/backstretch/jquery.backstretch.js',
         'common/util.js',
         'common/interface.js',
+        'common/jquery-extend.js',
         'page/page_login.js',
     ],
 };

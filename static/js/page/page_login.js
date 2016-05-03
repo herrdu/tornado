@@ -6,7 +6,8 @@ var Login = function() {
      */
     function login() {
         if ($('.login-form').validate().form()) {
-            Util.setAjax(Inter.getApiUrl().loginUrl, { username: 'duyutao', password: '123456' },
+            var postData = $('.login-form').formatForm();
+            Util.setAjax(Inter.getApiUrl().loginUrl, postData,
                 function(json) {
                     if (json.success) {
                         window.location = "./index";
