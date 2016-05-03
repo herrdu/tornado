@@ -23,23 +23,13 @@
     ued_import('${styleSheet}', 'css');
     /* End PAGE LEVEL PLUGINS*/
     </script>
-    <!-- BEGIN GLOBAL MANDATORY STYLES -->
-    <!-- END GLOBAL MANDATORY STYLES -->
-    <!-- BEGIN PAGE LEVEL PLUGINS -->
-    <!-- END PAGE LEVEL PLUGINS -->
-    <!-- BEGIN THEME GLOBAL STYLES -->
-    <!-- END THEME GLOBAL STYLES -->
-    <!-- BEGIN PAGE LEVEL STYLES -->
-    <!-- END PAGE LEVEL STYLES -->
-    <!-- BEGIN THEME LAYOUT STYLES -->
-    <!-- END THEME LAYOUT STYLES -->
     <link rel="shortcut icon" href="favicon.ico" /> 
 </head>
 <!-- END HEAD -->
 
 <body class="page-container-bg-solid page-header-fixed page-sidebar-closed-hide-logo">
     <!-- BEGIN HEADER -->
-    {% include 'header.html' %}
+    {% include '../views/header.html' %}
     <!-- END HEADER -->
     <!-- BEGIN HEADER & CONTENT DIVIDER -->
     <div class="clearfix"> </div>
@@ -47,7 +37,7 @@
     <!-- BEGIN CONTAINER -->
     <div class="page-container">
         <!-- BEGIN SIDEBAR -->
-        {% include 'nav.html' %}
+        {% include '../views/nav.html' %}
         <!-- END SIDEBAR -->
         <!-- BEGIN CONTENT -->
         <div class="page-content-wrapper">
@@ -59,7 +49,7 @@
     </div>
     <!-- END CONTAINER -->
     <!-- BEGIN FOOTER -->
-    {% include 'footer.html' %}
+    {% include '../views/footer.html' %}
     <!-- END FOOTER -->
     <!--[if lt IE 9]>
         <script src="../assets/global/plugins/respond.min.js"></script>

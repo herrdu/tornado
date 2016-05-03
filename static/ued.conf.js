@@ -3,6 +3,7 @@
     amdPath: '//localhost:8083/static/js/',
     comPath: '//localhost:8080/company-application',
     version: 'v2.0.0',//工资宝新版改版
+    context:'',//中间路径
     waitTime: 120,
     pageSize: 10,
     publishVersion: 'v20160415',
