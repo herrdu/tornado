@@ -1,6 +1,7 @@
 # -*- coding: utf-8 -*-
 __author__ = 'herrdu'
 import ujson
+from lib.pgdatabase import readDb
 
 from baseHandler import baseHandler
 
@@ -14,6 +15,11 @@ class loginHandler(baseHandler):
         rqbody = self.request.body
         rqdata = ujson.loads(rqbody)
 
+        getUserSql = "select id,username,pwd FROM dsb_user "
+        selVersionSql = "SELECT   tablename   FROM   pg_tables"
+        getData = readDb(getUserSql)
+        print getData
+        print getData[0]['username']
         print self.session
         self.session['username'] = rqdata['username']
         self.session['password'] = rqdata['password']
